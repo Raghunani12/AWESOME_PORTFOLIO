@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /* ---------- GLOBAL STYLING ---------- */
 * {
   margin: 0;
@@ -84,25 +85,23 @@ body::selection {
   background: #64f4ac;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #CACACA;
   transition: 0.3s ease;
   border-radius: 15px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: #FEFEFE;
 }
-
-
 
 /* ---------- SECTION HEADER ---------- */
 #header {
@@ -121,12 +120,6 @@ body::selection {
   left: 0;
   margin: 0;
 }
-
-/* #content-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 .navbar-title {
   display: flex;
@@ -194,6 +187,7 @@ body::selection {
   font-size: 14px;
   transition: 0.3s ease;
 }
+
 .social-media li a {
   color: #fefefe;
   text-decoration: none;
@@ -281,10 +275,11 @@ body::selection {
 }
 
 .body-tail p {
-  color: #cacaca;
+  padding: 20px 0 0;
   font-size: 16px;
-  font-weight: 500;
-  padding: 0 40px 0 5px;
+  color: #cacaca;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .body-part-2 {
@@ -926,4 +921,60 @@ body::selection {
 
 .social-icons a:nth-child(6) i:hover {
   color: #3b5998;
+}
+/* ---------- MEDIA QUERIES FOR MOBILE ---------- */
+@media (max-width: 768px) {
+  #header {
+    padding: 10px 20px;
+  }
+
+  .navbar-title {
+    flex-direction: column;
+  }
+
+  .title-first-name {
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .title-last-name {
+    font-size: 20px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar-menu li {
+    padding: 5px 0;
+  }
+
+  .body-title h1 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    padding: 25px 0 0 0;
+  }
+
+  .body-title p {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  .body-title a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .body-tail {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .body-tail p {
+    padding: 10px 0;
+    text-align: center;
+  }
 }
